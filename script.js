@@ -34,6 +34,7 @@ button.addEventListener('click', function() {
         div.appendChild(divTxt);
         div.style.color = 'white';
         div.style.textAlign = 'center';
+        div.style.fontSize = 'xxx-large';
     })
 
     div.addEventListener('mouseout', function () {
@@ -45,9 +46,7 @@ button.addEventListener('click', function() {
         div.style.backgroundColor = randomColor;
     })
 
-    div.addEventListener('dblclick', function () {
-
-    })
+    div.addEventListener('dblclick', remove)
 
 });
 
@@ -64,6 +63,23 @@ function getRandomColor() {
 
 //checking to see it is producing random colors
 //console.log(getRandomColor());
+
+//function to remove squares - if square id is even, remove the square that follows the one clicked but if square is odd, remove the square before one clicked
+function remove() {
+    if (this.id % 2 === 0) {
+        if (this.nextSibling) {
+            this.nextSibling.remove();
+        } else {
+            alert('Square does not exist!');
+        }
+    } else {
+        if (this.previousSibling) {
+            this.previousSibling.remove();
+        } else {
+            alert('Square does not exist!');
+        }
+    }
+}
 
 
     
