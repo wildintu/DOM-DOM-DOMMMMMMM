@@ -1,12 +1,12 @@
 # DOM DOM DOMMMMMMM!
 
-# Info
+## Info
 * To practice using DOM functions, you will not write any HTML in this lab
 * You have been given a project skeleton with a basic HTML file. Do not make any changes to the body of the HTML file other than adding a script import.
 * Create a JavaScript file and import it into your html file
 * Create a CSS stylesheet and import it into your html file
 
-# Objectives
+## Objectives
 * When the browser first loads, use the DOM to create and insert a button labeled Add Square into the body
 * When the button is clicked, a new div should be added to the page
  - The div should be a black square
@@ -26,7 +26,7 @@
   -- The square before the clicked square should be removed from the page
   -- If there isn't a square before the clicked square, display an alert indicating so
 
-# Hints
+## Hints
 * You will be using DOM functions to complete this portion of the lab
 * Remember that elements can be added to other elements
  - document.body.appendChild(someElement);
